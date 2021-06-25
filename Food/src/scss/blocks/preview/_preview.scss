@@ -90,32 +90,3 @@
         opacity: 1;
     }
 }
- // const tabs = document.querySelectorAll('.tabheader__item'),
-    //     tabsContent = document.querySelectorAll('.tabcontent'),
-    //     tabsParent = document.querySelector('.tabheader__items');
-    // function hideTabContent() {
-    //     tabsContent.forEach(i => {
-    //         i.classList.add('hide');
-    //         i.classList.remove('show', 'fade');
-    //     });
-    //     tabs.forEach(i => {
-    //         i.classList.remove('tabheader__item_active');
-    //     })
-    // }
-    // function showTabsContent(i = 0) {
-    //     tabsContent[i].classList.remove('hide');
-    //     tabsContent[i].classList.add('show', 'fade');
-    //     tabs[i].classList.add('tabheader__item_active');
-    // }
-    // hideTabContent();
-    // showTabsContent();
-    // tabsParent.addEventListener('click', (e) => {
-    //     if (e.target && e.target.matches('.tabheader__item')) {
-    //         tabs.forEach((tab, index) => {
-    //             if (e.target == tab) {
-    //                 hideTabContent();
-    //                 showTabsContent(index);
-    //             }
-    //         });
-    //     }
-    // });
