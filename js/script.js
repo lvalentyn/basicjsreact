@@ -73,20 +73,48 @@
 // 2) Контекст у методов обьекта - это и будет сам обьект
 // 3) this в конструкторах и классах - это новый экземпляр обьекта
 // 4) Ручная привязка this: call, applay, bind
-const btn = document.querySelector('button');
-btn.addEventListener('click', (e) => {
-    e.target.style.backgroundColor = 'red';
-});
-const obj = {
-    num: 5,
-    sayNumber: function () {
-        const say = () => {
-            console.log(this.num);
-        };
-        say();
-    }
-};
-obj.sayNumber();
+// const btn = document.querySelector('button');
+// btn.addEventListener('click', (e) => {
+//     e.target.style.backgroundColor = 'red';
+// });
+// const obj = {
+//     num: 5,
+//     sayNumber: function () {
+//         const say = () => {
+//             console.log(this.num);
+//         };
+//         say();
+//     }
+// };
+// obj.sayNumber();
 
-const double = a => a * 2;
-console.log(double(3));
+// const double = a => a * 2;
+// console.log(double(3));
+// --------------------------------------------------
+// ---------------- lesson 47 -----------------------
+// --------------------------------------------------
+// class Rectangle {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+//     calcArea() {
+//         return this.height * this.width;
+//     }
+// }
+// class ColoredRactangleWithtext extends Rectangle {
+//     constructor(height, width, text, bgColor) {
+//         super(height, width);
+//         this.text = text;
+//         this.bgColor = bgColor;
+//     }
+//     showMyProps() {
+//         console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+//     }
+// }
+// const div = new ColoredRactangleWithtext(20, 20, 'Hiiii', 'red');
+// const square = new ColoredRactangleWithtext(10, 20);
+// const long = new Rectangle(40, 20);
+// console.log(square.showMyProps());
+// div.showMyProps();
+// console.log(div.calcArea());
