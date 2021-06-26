@@ -121,11 +121,27 @@
 // --------------------------------------------------
 // ---------------- lesson 49 -----------------------
 // --------------------------------------------------
-const log = function (a, b, ...rest) {
-    console.log(a, b, rest);
-}
-log('basic', 'rest', 'oper', 'usage');
-function calcOrDouble(number, basis = 2) {
-    console.log(number * basis);
-}
-calcOrDouble(3);
+// const log = function (a, b, ...rest) {
+//     console.log(a, b, rest);
+// }
+// log('basic', 'rest', 'oper', 'usage');
+// function calcOrDouble(number, basis = 2) {
+//     console.log(number * basis);
+// }
+// calcOrDouble(3);
+// --------------------------------------------------
+// ---------------- lesson 51 -----------------------
+// --------------------------------------------------
+
+const person = {
+    name: 'Alex',
+    tel: '+38012421412',
+    parent: {
+        mom: 'Olga',
+        dad: 'Mike'
+    }
+};
+const clone = JSON.parse(JSON.stringify(person));
+clone.parent.mom = 'Ann'
+console.log(person);
+console.log(clone);
